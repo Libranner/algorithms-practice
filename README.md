@@ -24,20 +24,12 @@ print(gapSize)
 # Cyclic Rotation
 
 ~~~~
-let array = [2,3,4,5,6]
+var array = [2,3,4,5,6]
 let k = 6
 
-var size =  array.count
-var result = Array(repeating: 0, count: size)
-
-var position = 0
 for (index, element) in array.enumerated() {
-	position = index + k
-	while(position >= size) {
-		position = position - size
-	}
-	result[position] = element
+	array[(index + k) % array.count] = element
 }
 
-print(result)
+print(array)
 ~~~~
