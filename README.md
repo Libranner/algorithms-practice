@@ -21,7 +21,7 @@ for i in bin.characters {
 print(gapSize)
 ~~~~ 
 
-# Ciclic Rotation
+# Cyclic Rotation
 
 ~~~~
 let array = [2,3,4,5,6]
