@@ -33,3 +33,11 @@ for (index, element) in array.enumerated() {
 
 print(array)
 ~~~~
+
+# FrogJmp
+~~~~~
+
+var jumps = Double(y - x)/Double(d) 
+print(ceil(jumps))
+
+~~~~~
