@@ -37,7 +37,13 @@ print(array)
 # FrogJmp
 ~~~~~
 
-var jumps = Double(y - x)/Double(d) 
+import Foundation
+
+var x = 10
+let y = 85
+let d = 30
+
+let jumps = Double(y - x)/Double(d) 
 print(ceil(jumps))
 
 ~~~~~
