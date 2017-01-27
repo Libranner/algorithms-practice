@@ -52,22 +52,23 @@ print(ceil(jumps))
 ~~~~~
 var A = [-1,3,-4,5,1,-6,2,1]
 let n = A.count
+
 if (n==0) {
-  print(-1)
+	print(-1)
 }
 
 var sum: Double = 0;
 for i in 0..<n{
-  sum += Double(A[i])
+	sum += Double(A[i])
 }
 
 var sum_left: Double = 0
 for i in 0..<n{
-  let sum_right: Double = sum - sum_left - Double(A[i])
-  if (sum_left == sum_right) {
-    print(i)
-  }
-  sum_left += Double(A[i])
+	let sum_right: Double = sum - sum_left - Double(A[i])
+	if (sum_left == sum_right) {
+		print(i)
+	}
+	sum_left += Double(A[i])
 }
 print(-1)
 
