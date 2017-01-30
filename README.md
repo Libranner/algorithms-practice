@@ -73,3 +73,19 @@ for i in 0..<n{
 print(-1)
 
 ~~~~~
+
+# PermMissingElem
+~~~~~
+let A = [1,2,4]
+
+let size =  A.count
+var sum: Double = 0
+var sum_complementary: Double = 0
+for index in 0..<size {
+	sum += Double(A[index])
+	sum_complementary += Double(index + 1)
+}
+sum_complementary += Double(size + 1)
+
+print(Int(sum - sum_complementary))
+~~~~~
