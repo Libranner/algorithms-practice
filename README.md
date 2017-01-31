@@ -89,3 +89,22 @@ sum_complementary += Double(size + 1)
 
 print(Int(sum - sum_complementary))
 ~~~~~
+
+#MissingInteger
+~~~~~
+public func solution(_ A : inout [Int]) -> Int {
+	var result = 0
+	let set = Set(A)
+	repeat {
+		result += 1
+	}while (set.contains(result))
+	
+	return result
+}
+
+var A = [-1,-3,-6,-4,-1,-2]
+print(solution(&A))
+~~~~~
+
+
+
