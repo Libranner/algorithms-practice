@@ -109,7 +109,6 @@ print(solution(&A))
 #Matching brackets
 ~~~~~
 public func solution( _ S:String) -> Int{
-	let S = "(())))("
 	var totalClosedBrackets = 0
 
 	for c in S.characters {
