@@ -108,31 +108,33 @@ print(solution(&A))
 
 #Matching brackets
 ~~~~~
-let S = "(())))("
+public func solution( _ S:String) -> Int{
+	let S = "(())))("
+	var totalClosedBrackets = 0
 
-var totalClosedBrackets = 0
-
-for c in S.characters {
-	if(c == ")") {
-		totalClosedBrackets += 1
+	for c in S.characters {
+		if(c == ")") {
+			totalClosedBrackets += 1
+		}
 	}
+
+	var position = 0, closedBrackets = 0, openBrackets = 0
+	for c in S.characters {
+		position += 1
+		if(c == "("){
+			openBrackets += 1
+		}
+		else{
+			closedBrackets += 1
+		}
+
+		if(openBrackets == totalClosedBrackets - closedBrackets){
+			return position
+		}
+	}
+	return position
 }
 
-var position = 0, cc = 0, dd = 0
-for c in S.characters {
-	position += 1
-	if(c == "("){
-		cc += 1
-	}
-	else{
-		dd += 1
-	}
-	
-	if(cc == totalClosedBrackets - dd){
-		print(position)
-		break;
-	}
-}
-
+print(solution("(())))("))
 ~~~~~
 
