@@ -106,5 +106,33 @@ var A = [-1,-3,-6,-4,-1,-2]
 print(solution(&A))
 ~~~~~
 
+#Matching brackets
+~~~~~
+let S = "(())))("
 
+var totalClosedBrackets = 0
+
+for c in S.characters {
+	if(c == ")") {
+		totalClosedBrackets += 1
+	}
+}
+
+var position = 0, cc = 0, dd = 0
+for c in S.characters {
+	position += 1
+	if(c == "("){
+		cc += 1
+	}
+	else{
+		dd += 1
+	}
+	
+	if(cc == totalClosedBrackets - dd){
+		print(position)
+		break;
+	}
+}
+
+~~~~~
 
