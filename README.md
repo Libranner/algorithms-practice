@@ -109,15 +109,14 @@ print(solution(&A))
 #Matching brackets
 ~~~~~
 public func solution( _ S:String) -> Int{
-	var totalClosedBrackets = 0
-
+	var position = 0, closedBrackets = 0, openBrackets = 0, totalClosedBrackets = 0
+	
 	for c in S.characters {
 		if(c == ")") {
 			totalClosedBrackets += 1
 		}
 	}
 
-	var position = 0, closedBrackets = 0, openBrackets = 0
 	for c in S.characters {
 		position += 1
 		if(c == "("){
