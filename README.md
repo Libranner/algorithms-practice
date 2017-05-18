@@ -90,7 +90,7 @@ sum_complementary += Double(size + 1)
 print(Int(sum - sum_complementary))
 ~~~~~
 
-#MissingInteger
+# MissingInteger
 ~~~~~
 public func solution(_ A : inout [Int]) -> Int {
 	var result = 0
@@ -106,7 +106,7 @@ var A = [-1,-3,-6,-4,-1,-2]
 print(solution(&A))
 ~~~~~
 
-#Matching brackets
+# Matching brackets
 ~~~~~
 public func solution( _ S:String) -> Int{
 	var position = 0, closedBrackets = 0, openBrackets = 0, totalClosedBrackets = 0
