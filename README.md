@@ -21,7 +21,7 @@ for i in bin.characters {
 print(gapSize)
 ~~~~ 
 
-# Cyclic Rotation
+## Cyclic Rotation
 
 ~~~~
 var array = [2,3,4,5,6]
@@ -34,7 +34,7 @@ for (index, element) in array.enumerated() {
 print(array)
 ~~~~
 
-# FrogJmp
+## FrogJmp
 ~~~~~
 
 import Foundation
@@ -48,7 +48,7 @@ print(ceil(jumps))
 
 ~~~~~
 
-# Equi
+## Equi
 ~~~~~
 var A = [-1,3,-4,5,1,-6,2,1]
 let n = A.count
@@ -74,7 +74,7 @@ print(-1)
 
 ~~~~~
 
-# PermMissingElem
+## PermMissingElem
 ~~~~~
 let A = [1,2,4]
 
@@ -90,7 +90,7 @@ sum_complementary += Double(size + 1)
 print(Int(sum - sum_complementary))
 ~~~~~
 
-# MissingInteger
+## MissingInteger
 ~~~~~
 public func solution(_ A : inout [Int]) -> Int {
 	var result = 0
@@ -106,7 +106,7 @@ var A = [-1,-3,-6,-4,-1,-2]
 print(solution(&A))
 ~~~~~
 
-# Matching brackets
+## Matching brackets
 ~~~~~
 public func solution( _ S:String) -> Int{
 	var position = 0, closedBrackets = 0, openBrackets = 0, totalClosedBrackets = 0
